@@ -1,0 +1,109 @@
+
+34611@DESKTOP-DOQIVQJ MINGW64 ~
+$ cd desktop
+
+34611@DESKTOP-DOQIVQJ MINGW64 ~/desktop
+$ curl -L -o planets.zip https://github.com/WildCodeSchool/quests-resources/blob/master/terminal/planets.zip?raw=true
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   148  100   148    0     0   1264      0 --:--:-- --:--:-- --:--:--  1264
+100   159  100   159    0     0    514      0 --:--:-- --:--:-- --:--:--   514
+100  293k  100  293k    0     0   516k      0 --:--:-- --:--:-- --:--:--  516k
+
+34611@DESKTOP-DOQIVQJ MINGW64 ~/desktop
+$ unzip planets.zip
+Archive:  planets.zip
+   creating: planets/
+  inflating: planets/mercury.jpeg
+  inflating: planets/earth.jpeg
+  inflating: planets/pluto.jpeg
+  inflating: planets/arrakis.jpeg
+  inflating: planets/jupiter.jpeg
+  inflating: planets/venus.jpeg
+  inflating: planets/mars.jpeg
+  inflating: planets/cybertron.jpeg
+  inflating: planets/coruscant.jpeg
+  inflating: planets/uranus.jpeg
+  inflating: planets/neptune.jpeg
+  inflating: planets/saturn.jpeg
+
+34611@DESKTOP-DOQIVQJ MINGW64 ~/desktop
+$ mkdir -p planets/real planets/fictional planets/inhabited
+
+34611@DESKTOP-DOQIVQJ MINGW64 ~/desktop
+$ mkdir -p planets/real/terrestrial planets/real/gas-giants planets/real/dwarf-planets
+
+34611@DESKTOP-DOQIVQJ MINGW64 ~/desktop
+$ cd ~/desktop/planets
+
+34611@DESKTOP-DOQIVQJ MINGW64 ~/desktop/planets
+$ ls
+arrakis.jpeg    earth.jpeg  jupiter.jpeg  neptune.jpeg  saturn.jpeg
+coruscant.jpeg  fictional/  mars.jpeg     pluto.jpeg    uranus.jpeg
+cybertron.jpeg  inhabited/  mercury.jpeg  real/         venus.jpeg
+
+34611@DESKTOP-DOQIVQJ MINGW64 ~/desktop/planets
+$ mv mercury.jpeg venus.jpeg earth.jpeg mars.jpeg real/terrestrial
+
+34611@DESKTOP-DOQIVQJ MINGW64 ~/desktop/planets
+$ mv jupiter.jpeg saturn.jpeg uranus.jpeg real/gas-giants
+
+34611@DESKTOP-DOQIVQJ MINGW64 ~/desktop/planets
+$ ls
+arrakis.jpeg    cybertron.jpeg  inhabited/    real/
+coruscant.jpeg  fictional/      neptune.jpeg
+
+34611@DESKTOP-DOQIVQJ MINGW64 ~/desktop/planets
+$ mv neptune.jpeg real/dwarf-planets
+
+34611@DESKTOP-DOQIVQJ MINGW64 ~/desktop/planets
+$ mv arrakis.jpeg cybertron.jpeg coruscant.jpeg fictional/
+
+34611@DESKTOP-DOQIVQJ MINGW64 ~/desktop/planets
+$ ls
+fictional/  inhabited/  real/
+
+34611@DESKTOP-DOQIVQJ MINGW64 ~/desktop/planets
+$ cd ~/desktop/planets/real/terrestrial
+
+34611@DESKTOP-DOQIVQJ MINGW64 ~/desktop/planets/real/terrestrial
+$ ls
+earth.jpeg  mars.jpeg  mercury.jpeg  venus.jpeg
+
+34611@DESKTOP-DOQIVQJ MINGW64 ~/desktop/planets/real/terrestrial
+$ pwd
+/c/Users/34611/desktop/planets/real/terrestrial
+
+34611@DESKTOP-DOQIVQJ MINGW64 ~/desktop/planets/real/terrestrial
+$ cp mercury.jpeg /c/Users/34611/desktop/planets/inhabited/mercury.jpeg
+
+34611@DESKTOP-DOQIVQJ MINGW64 ~/desktop/planets/real/terrestrial
+$ cp venus.jpeg /c/Users/34611/desktop/planets/inhabited/venus.jpeg
+
+34611@DESKTOP-DOQIVQJ MINGW64 ~/desktop/planets/real/terrestrial
+$ cd ~/desktop/planets/real/gas-giants
+
+34611@DESKTOP-DOQIVQJ MINGW64 ~/desktop/planets/real/gas-giants
+$ ls
+jupiter.jpeg  saturn.jpeg  uranus.jpeg
+
+34611@DESKTOP-DOQIVQJ MINGW64 ~/desktop/planets/real/gas-giants
+$ cp jupiter.jpeg /c/Users/34611/desktop/planets/inhabited/jupiter.jpeg
+
+34611@DESKTOP-DOQIVQJ MINGW64 ~/desktop/planets/real/gas-giants
+$ cd ~/desktop/planets/real/dwarf-planets
+
+34611@DESKTOP-DOQIVQJ MINGW64 ~/desktop/planets/real/dwarf-planets
+$ ls
+neptune.jpeg  pluto.jpeg
+
+34611@DESKTOP-DOQIVQJ MINGW64 ~/desktop/planets/real/dwarf-planets
+$ cp neptune.jpeg /c/Users/34611/desktop/planets/inhabited/neptune.jpeg
+
+34611@DESKTOP-DOQIVQJ MINGW64 ~/desktop/planets/real/dwarf-planets
+$ rm pluto.jpeg
+
+34611@DESKTOP-DOQIVQJ MINGW64 ~/desktop/planets/real/dwarf-planets
+$ ls
+neptune.jpeg
+
